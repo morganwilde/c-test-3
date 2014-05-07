@@ -44,7 +44,6 @@ int stackElementIntValue(struct Stack *s, int index)
 	}
 	return 0;
 }
-//------------------------------------------------------------------------------
 void push(struct Stack *s, void* value, int valueSize)
 {
 	if (s->size >= MAX_DATA - 1) {
@@ -61,8 +60,6 @@ void push(struct Stack *s, void* value, int valueSize)
 		#endif
 	}
 }
-
-//------------------------------------------------------------------------------
 void* pop(struct Stack *s)
 {
 	void *temp = NULL;
